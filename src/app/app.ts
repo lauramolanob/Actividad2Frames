@@ -6,10 +6,11 @@ import { Carousel } from './carousel/carousel';
 import { Categories } from './categories/categories';
 import { News } from './news/news';
 import { Pagination } from './pagination/pagination' 
+import { Footer } from './footer/footer';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, RouterLink, RouterLinkWithHref, Navbar, Categories, Carousel, News, Pagination, Cart],
+  imports: [RouterOutlet, RouterLink, RouterLinkWithHref, Navbar, Categories, Carousel, News, Pagination, Cart, Footer],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

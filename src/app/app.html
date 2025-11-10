@@ -13,7 +13,6 @@
                         <li class="nav-item"><a class="nav-link green-color" routerLink="/home" href="">Contáctanos</a></li>
                     </ul>
                 </div>
-
             </div>
         </div>
     </div>
@@ -33,7 +32,10 @@
       
       <app-categories></app-categories>
     </div>
-  </div>
+      <div class="bg-dark text-white">
+        <app-footer></app-footer>
+      </div>
+    </div>
 </main>
 <app-cart [visible]="carritoVisible" (cerrarCarrito)="alternarCarrito()"></app-cart>
 
