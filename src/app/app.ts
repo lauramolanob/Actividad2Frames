@@ -2,15 +2,12 @@ import { Component, signal } from '@angular/core';
 import { RouterOutlet, RouterLink, RouterLinkWithHref } from '@angular/router';
 import { Navbar } from './navbar/navbar'
 import { Cart } from './cart/cart';
-import { Carousel } from './carousel/carousel';
-import { Categories } from './categories/categories';
-import { News } from './news/news';
-import { Pagination } from './pagination/pagination' 
 import { Footer } from './footer/footer';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, RouterLink, RouterLinkWithHref, Navbar, Categories, Carousel, News, Pagination, Cart, Footer],
+  standalone: true,
+  imports: [RouterOutlet, RouterLink, RouterLinkWithHref, Navbar, Cart, Footer],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
