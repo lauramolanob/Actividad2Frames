@@ -10,3 +10,13 @@
     cursor: pointer;
     transition: background-color 0.2s ease;
 }
+.btn-green{
+    background-color: #1c5052;
+    color:#fff;
+    transition: all 300ms;
+    border: none;
+}
+
+.green-color{
+    color:#1c5052;
+}
