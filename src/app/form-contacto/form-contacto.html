@@ -10,22 +10,22 @@
         </div>
         <div class="row justify-content-center">
             <div class="col-12 col-md-8 col-lg-6">
-                <form (ngSubmit)="onSubmit(form)" #form="ngForm">
+                <form [formGroup]="formComunicaciones" (ngSubmit)="onSubmit()">
                     <div class="mb-3">
                         <label class="form-label">Nombre completo*</label>
-                        <input type="text" class="form-control" id="name" name="name" [(ngModel)]="infoUser.name" required>
+                        <input type="text" class="form-control" id="name" name="name" formControlName="name" required>
                     </div>
                     <div class="mb-3">
                         <label class="form-label">Correo electrónico*</label>
-                        <input type="text" class="form-control" id="email" name="email" [(ngModel)]="infoUser.email" required>
+                        <input type="text" class="form-control" id="email" name="email" formControlName="email" required>
                     </div>
                     <div class="mb-3">
                         <label class="form-label">Teléfono de contacto*</label>
-                        <input type="text" class="form-control" id="phone" name="phone" [(ngModel)]="infoUser.phone" required>
+                        <input type="text" class="form-control" id="phone" name="phone" formControlName="phone" required>
                     </div>
                     <div class="mb-3">
                         <label class="form-label">Cuéntanos cómo podemos ayudarte</label>
-                        <textarea class="form-control" id="messaje" name="messaje" [(ngModel)]="infoUser.messaje" aria-label="With textarea" required></textarea>
+                        <textarea class="form-control" id="messaje" name="messaje" formControlName="messaje" aria-label="With textarea" required></textarea>
                     </div>
 
                     <div class="mb-3 form-check ">
@@ -33,7 +33,7 @@
                         <label class="form-check-label " for="exampleCheck1">Acepto la <a href="#">política del manejo de datos</a></label>
                     </div>
                     <div class="text-center pt-3">
-                        <button type="button" class="btn btn-green px-5">
+                        <button type="submit" class="btn btn-green px-5"> 
                             Enviar mi solicitud
                         </button>
                     </div>
