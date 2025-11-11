@@ -12,7 +12,7 @@ import { CommonModule } from '@angular/common';
 export class FormContacto implements OnInit{
   title = 'Contáctanos';
   formBuilder = inject(FormBuilder);
-  
+
   isModalVisible: boolean = false; 
 
   formComunicaciones = this.formBuilder.group({

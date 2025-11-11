@@ -1,6 +1,6 @@
 <div class="pt-1 pb-2 mt-0 px-1">
     <div class="container py-5">
-       <h3 class="mt-2 mt-lg-5 mb-0 mb-lg-5 green-color text-center">
+        <h3 class="mt-2 mt-lg-5 mb-0 mb-lg-5 green-color text-center">
             <strong>{{ title }}</strong>
         </h3>
         <div class="row justify-content-center">
@@ -29,9 +29,10 @@
                     </div>
 
                     <div class="mb-3 form-check ">
-                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
                         <label class="form-check-label " for="exampleCheck1">Acepto la <a href="#">política del manejo de datos</a></label>
                     </div>
+                    
                     <div class="text-center pt-3">
                         <button type="submit" class="btn btn-green px-5"> 
                             Enviar mi solicitud
@@ -42,6 +43,7 @@
         </div>
     </div>
 </div>
+
 <div *ngIf="isModalVisible" class="modal d-block" tabindex="-1" role="dialog" style="background-color: rgba(0, 0, 0, 0.5);">
     <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
